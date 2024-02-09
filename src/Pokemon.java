@@ -2,16 +2,13 @@ abstract class Pokemon {
 
     public String name;
 
-    public Pokemon(String name, String type, String strength, String weakness) {
+    public Pokemon(String name) {
         this.setName(name);
-        this.setType(type);
-        this.setStrength(strength);
-        this.setWeakness(weakness);
     }
 
     public String getName() {
         return this.name;
-    }
+    };
 
     public void setName(String name) {
         this.name = name;
