@@ -1,4 +1,5 @@
-public class Pokemon {
+abstract class Pokemon {
+
     public String name;
     public String strength;
     public String weakness;
@@ -19,27 +20,9 @@ public class Pokemon {
         this.name = name;
     }
 
-    public String getType() {
-        return this.type;
-    }
+    abstract Powers getType();
 
-    public void setType(String type) {
-        this.type = type;
-    }
+    abstract Powers getStrength();
 
-    public String getStrength() {
-        return this.strength;
-    }
-
-    public void setStrength(String strength) {
-        this.strength = strength;
-    }
-
-    public String getWeakness() {
-        return this.weakness;
-    }
-
-    public void setWeakness(String weakness) {
-        this.weakness = weakness;
-    }
+    abstract Powers getWeakness();
 }
