@@ -6,7 +6,7 @@ public class Main {
         Scanner userInput = new Scanner(System.in);
         System.out.println("What would you like to name your charmander?");
         String name = userInput.nextLine(); // The player answers with the desired name
-        Pokemon charmander = new Charmander(name, "Fire", "Fire", "Water"); // charmander is initialized through the Charmander subclass
+        Pokemon charmander = new Charmander(name); // charmander is initialized through the Charmander subclass
         boolean gameplay = true;
         while (gameplay) { // Input loop for battle cry and renaming
             for (int loop = 0; loop < 10; loop++) { // Repeats the battlecry 10 times
