@@ -1,9 +1,6 @@
 abstract class Pokemon {
 
     public String name;
-    public String strength;
-    public String weakness;
-    public String type;
 
     public Pokemon(String name, String type, String strength, String weakness) {
         this.setName(name);
