@@ -1,25 +1,27 @@
 public class Pokeball {
-    private String name;
-    private Pokemon pokemon;
 
-    public Pokeball(String name, Pokemon pokemon) {
-        this.name = name;
-        this.pokemon = pokemon;
+    private Charmander charmander;
+
+    public Pokeball() {
+        this.charmander = null;
     }
 
-    public String getName() {
-        return name;
+    public void PokeballEmpty() {
+        return charmander == null;
     }
 
-    public Pokemon getPokemon() {
-        return pokemon;
+    public void throwPokeball() {
+
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void returnCharmander() {
     }
 
-    public void setPokemon(Pokemon pokemon) {
-        this.pokemon = pokemon;
+    public Charmander getCharmander() {
+        return charmander;
+    }
+
+    public void setCharmander(Charmander charmander) {
+        this.charmander = charmander;
     }
 }
