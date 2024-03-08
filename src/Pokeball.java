@@ -1,28 +1,15 @@
 public class Pokeball {
+    public String empty;
 
-    private Charmander charmander;
+    public String charmander;
 
-    public Pokeball() {
-        this.charmander = null;
+    public Integer amount;
+
+
+    public pokeball(String Empty, String Charmaner, Integer Amount) {
+        this.empty = Empty;
+        this.charmander = Charmander;
+        this.amount = Amount;
     }
 
-    public void PokeballEmpty() {
-        return charmander == null;
-    }
-
-    public void throwPokeball() {
-
-    }
-
-
-    public void returnCharmander() {
-    }
-
-    public Charmander getCharmander() {
-        return charmander;
-    }
-
-    public void setCharmander(Charmander charmander) {
-        this.charmander = charmander;
-    }
 }

@@ -1,9 +1,14 @@
-import java.util.ArrayList;
+import java.util.ArrayList;  // import the ArrayList class
+public class Trainer extends Pokeball {
+    public String name;
+    public Trainer(String name) {
+        this.name = name;
+    }
+    public class Belt{
 
-public class Trainer {
-    private String name;
-}
-public  void belt(){
-    ArrayList<Pokeball> Pokeball = new ArrayList<Pokeball>;
-}
+        ArrayList<String> Belt = new ArrayList<String>(); // Create an ArrayList object
+        Belt.add('')
+    }
 
+
+}
