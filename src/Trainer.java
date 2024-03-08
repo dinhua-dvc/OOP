@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import java.util.ArrayList;  // import the ArrayList class
 public class Trainer extends Pokeball {
     public String name;
@@ -12,3 +13,9 @@ public class Trainer extends Pokeball {
 
 
 }
+=======
+public class Trainer {
+    public Trainer(String name);
+    
+}
+>>>>>>> 4c96c56fada235d12b3ff0f45db4401b0c27e93c
