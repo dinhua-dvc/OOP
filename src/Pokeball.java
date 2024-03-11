@@ -1,44 +1,20 @@
-public class Pokeball {
-<<<<<<< HEAD
-    public String empty;
+public class Pokeball extends Charmander {
 
-    public String charmander;
-
-    public Integer amount;
+    public Charmander charmander;
+    public boolean Hascharmanderinside;
 
 
-    public pokeball(String Empty, String Charmaner, Integer Amount) {
-        this.empty = Empty;
-        this.charmander = Charmander;
-        this.amount = Amount;
-    }
-
-}
-=======
-
-    private Charmander charmander;
-
-    public Pokeball() {
-        this.charmander = null;
-    }
-
-    public void PokeballEmpty() {
-        return charmander == null;
-    }
-
-    public void throwPokeball() {
-
-    }
-
-    public void returnCharmander() {
-    }
-
-    public Charmander getCharmander() {
-        return charmander;
-    }
-
-    public void setCharmander(Charmander charmander) {
+    public Pokeball(Charmander charmander){
         this.charmander = charmander;
     }
+    public Charmander Open(){
+        return this.charmander;
+    }
+    public void Close(Charmander charmander){
+        this.charmander = charmander;
+    }
+    public boolean GetCharmanderInside(){
+        return this.charmander;
+    }
+
 }
->>>>>>> 4c96c56fada235d12b3ff0f45db4401b0c27e93c
