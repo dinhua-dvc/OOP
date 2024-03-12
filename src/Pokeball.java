@@ -1,20 +1,21 @@
-public class Pokeball extends Charmander {
-
+class Pokeball {
     public Charmander charmander;
-    public boolean Hascharmanderinside;
-
-
-    public Pokeball(Charmander charmander){
+    public boolean hasCharmanderInside;
+ 
+    public Pokeball(Charmander charmander) {
         this.charmander = charmander;
     }
-    public Charmander Open(){
+ 
+    public Charmander open() {
         return this.charmander;
     }
-    public void Close(Charmander charmander){
+ 
+    public void close(Charmander charmander) {
         this.charmander = charmander;
     }
-    public boolean GetCharmanderInside(){
+ 
+    public Charmander getCharmanderInside() {
         return this.charmander;
     }
-
 }
+ 

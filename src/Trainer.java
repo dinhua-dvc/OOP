@@ -1,31 +1,35 @@
+import java.util.ArrayList;
+import java.util.List;
 
-public class Trainer {
+class Trainer{
     public String name;
-    public  List<Pokeball> belt;
-
-    public String(string name){
+    public List<Pokeball> belt;
+ 
+    public Trainer(String name) {
         this.name = name;
-        this.belt = new List<Pokeball> belt;
+        this.belt = new ArrayList<>();
     }
-    public void TakePokeball(Pokeball pokeball){
-            /// add an if when the pokeballs become 6
-        belt Add(pokeball);
+ 
+    public void takePokeball(Pokeball pokeball) {
+        if (belt.size() < 6) {
+            belt.add(pokeball);
+        }
     }
-
-    public Charmander throwPokeball(){
-        /// get a pokeball from the belt
-        Pokeball pokeball = belt[index];
-
-        /// the pokeball opens and charmander does his battlecry
-        Charmander charmander = pokeball.Open();
-
-        return charmander;
+ 
+    public Charmander throwPokeball(int index) {
+        if (index >= 0 && index < belt.size()) {
+            Pokeball pokeball = belt.get(index);
+            Charmander charmander = pokeball.open();
+            return charmander;
+        } else {
+            return null;
+        }
     }
-
-    public void ReturnPokemon(Charmander charmander){
-        Pokeball pokeball = belt[index];
-
-        pokeball.Close(charmander);
+ 
+    public void returnPokemon(Charmander charmander, int index) {
+        if (index >= 0 && index < belt.size()) {
+            Pokeball pokeball = belt.get(index);
+            pokeball.close(charmander);
+        }
     }
 }
-
