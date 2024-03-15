@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 public class Pokeball {
 
     private Charmander charmander;
@@ -39,6 +40,26 @@ public class Pokeball {
 
     // Setter method to set the Charmander inside the Pokeball
     public void setCharmander(Charmander charmander) {
+=======
+class Pokeball {
+    public Charmander charmander;
+    public boolean hasCharmanderInside;
+ 
+    public Pokeball(Charmander charmander) {
+>>>>>>> 6bccf392d35b255b22292e800eb145ef158df255
         this.charmander = charmander;
     }
+ 
+    public Charmander open() {
+        return this.charmander;
+    }
+ 
+    public void close(Charmander charmander) {
+        this.charmander = charmander;
+    }
+ 
+    public Charmander getCharmanderInside() {
+        return this.charmander;
+    }
 }
+ 
