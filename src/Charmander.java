@@ -8,10 +8,11 @@ public class Charmander {
         this.strength = strength;
         this.weakness = weakness;
     }
-    public Charmander(String name) {
-        //TODO Auto-generated constructor stub
+    public String getName() {
+        return this.nickname;
     }
     public void battleCry(){
         System.out.println("charmander");
     }
-}
+
+    }
