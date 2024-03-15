@@ -20,3 +20,4 @@ abstract class Pokemon {
 
     abstract Powers getWeakness();
 }
+2

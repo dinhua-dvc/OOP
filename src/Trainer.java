@@ -1,4 +1,16 @@
 public class Trainer {
-    public Trainer(String name);
-    
+    private String name;
+
+
+    public Trainer(String name) {
+        this.name = name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getName() {
+        return name;
+    }
 }
