@@ -8,11 +8,9 @@ public class Charmander {
         this.strength = strength;
         this.weakness = weakness;
     }
-    public String getName() {
-        return this.nickname;
+    public Charmander(String name) {
     }
     public void battleCry(){
         System.out.println("charmander");
     }
-
-    }
+}
