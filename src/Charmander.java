@@ -1,15 +1,19 @@
-public class Charmander {
-    public String nickname;
-    public String strength;
-    public String weakness;
+class Charmander extends Pokemon {
 
-    public Charmander(String nickname,String strength,String weakness){
-        this.nickname = nickname;
-        this.strength = strength;
-        this.weakness = weakness;
-    }
     public Charmander(String name) {
+        super(name);
     }
+
+    @Override
+    Powers getType() {
+        return Powers.FIRE;
+    }
+
+    @Override
+    Powers getWeakness() {
+        return Powers.WATER;
+    }
+
     public void battleCry(){
         System.out.println("charmander");
     }
